@@ -3,7 +3,7 @@ import datetime
 message = """Hello"""
 name = 'Alex'
 pList= ['Jen',23]
-pTuple=('Livia',23)
+pTuple=('Anne',23)
 #s={1,2,3}
 
 tag = 'h1'
@@ -52,7 +52,7 @@ class Person:
         self.name = name
         self.age = age
 
-person = Person('Alex',44)
+person = Person('Alex',24)
 
 print( f'my name is {person.name} and i am {person.age} years old ' )
 #print( 'my name is {0.name} and i am {0.age} years old '.format(person) )  #old
@@ -152,15 +152,8 @@ occupation = 'gardener'
 msg =  f'Name: {name}\n' \
     f'Age: {age}\n'      \
     f'Occupation: {occupation}'
-
-
 print(type(msg))
 
-import timeit
-timeit.timeit("""name = "Eric"
-age = 74
-'%s is %s.' % (name, age)""", number = 10000)
 
-print(help(str.join))
 
 
